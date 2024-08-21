@@ -82,8 +82,8 @@ const MultiStageForm: React.FC = () => {
 
     if (Object.keys(newErrors).length === 0) {
       alert('Form submitted successfully!');
-      setFormData(initialFormData);  // Reset form data after submission
-      setStage(1);  // Optionally, reset to the first stage
+      setFormData(initialFormData);  
+      setStage(1);  
     } else {
       setErrors(newErrors);
     }
@@ -92,7 +92,6 @@ const MultiStageForm: React.FC = () => {
 
   return (
     <div className="max-w-xl mx-auto p-4">
-      {/* Mars Application Form Banner */}
       <div className="bg-red-500 text-white text-center py-4 rounded">
         <h1 className="text-2xl font-bold">Mars Application Form</h1>
       </div>
